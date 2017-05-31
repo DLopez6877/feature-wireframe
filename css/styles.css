@@ -2,6 +2,8 @@
 *:not(body):not(html) {
   box-sizing:border-box;
   border:1px dashed #000;
+  background-color: white;
+  opacity: .7;
 }
 
 .column {
@@ -11,24 +13,80 @@
 /*/////////////////////          GENERAL          /////////////////////*/
 body {
   margin: 0;
+  background-color: lightblue;
+}
+
+.cf {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .container {
-  margin: 10px;
-  border-width: medium;
-  padding: 5%;
-  min-height: calc(100vh - 20px);
+  width: 90%;
+  margin: 5%;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
-/*/////////////////////          GENERAL          /////////////////////*/
-.col1 {
-
+/*/////////////////////          HEADER          /////////////////////*/
+.logo {
+  width: 40%;
+  min-height: 40px;
+  margin-bottom: 10%;
 }
+
+.ul {
+  display: inline-block;
+  width: 50%;
+}
+ .li {
+  width: 11.66%;
+  margin-right: 5%;
+  min-height: 20px;
+  display: inline-block;
+ }
+
+
+/*/////////////////////          TITLE          /////////////////////*/
+.title1 {
+  width: 90%;
+  min-height: 50px;
+  margin: 20% 0 5% 0;
+}
+
+.title2 {
+  width: 95%;
+  min-height: 50px;
+  margin-bottom: 20%;
+}
+
+/*/////////////////////          FEATURES          /////////////////////*/
+
+.wrapper {
+  background-color: rgba(100, 100, 255, 0.2);
+}
+
+.feature {
+  margin-bottom: 10%;
+  background-color: rgba(100, 100, 255, 0.7);
+}
+
+.feature-img {
+  min-height: 400px;
+  margin-bottom: 10%;
+}
+
+.feature-h1 {
+  width: 40%;
+  min-height: 30px;
+  margin: 10% 0;
+}
+
 
 /*/////////////////////          @MEDIA          /////////////////////*/
 
 /* Smartphones (landscape) ----------- */
-@media only screen and (min-width : 321px) {
+@media only screen and (min-width : 321px) and (orientation : landscape) {
 /* Styles */
   body{
     background-color: blue;
@@ -36,7 +94,7 @@ body {
 }
 
 /* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 320px) {
+@media only screen and (max-width : 320px) and (orientation : portrait) {
   body{
     background-color: red;
   }
@@ -45,7 +103,7 @@ body {
 /* Smartphones Large (landscape) */
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape){
   body{
-    background-color: green;
+    background-color: yellow;
   }
 }
 
@@ -70,12 +128,6 @@ body {
   }
 }
 
-/* Desktops and laptops ----------- */
-@media only screen  and (min-width : 1224px) {
-  body{
-    background-color: yellow;
-  }
-}
 
 /* Large screens ----------- */
 @media only screen  and (min-width : 1824px) {
