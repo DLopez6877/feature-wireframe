@@ -11,6 +11,7 @@
 }
 
 /*/////////////////////          GENERAL          /////////////////////*/
+
 body {
   margin: 0;
   background-color: lightblue;
@@ -24,62 +25,64 @@ body {
 
 .container {
   width: 90%;
-  margin: 5%;
+  margin: 5% 5% 0 5%;
   background-color: rgba(255, 255, 255, 0.4);
 }
 
 /*/////////////////////          HEADER          /////////////////////*/
 .logo {
   width: 40%;
-  min-height: 40px;
-  margin-bottom: 10%;
+  min-height: 10vh;
+  margin-bottom: 5%;
 }
 
-.ul {
-  display: inline-block;
+.ol {
   width: 50%;
+  background-color: rgba(200, 200, 200, 0.2);
+  font-size: 0;
 }
- .li {
-  width: 11.66%;
+
+.li {
+  width: 28.333%;
   margin-right: 5%;
-  min-height: 20px;
+  min-height: 5vh;
   display: inline-block;
- }
+}
 
 
 /*/////////////////////          TITLE          /////////////////////*/
 .title1 {
   width: 90%;
-  min-height: 50px;
-  margin: 20% 0 5% 0;
+  min-height: 15vh;
+  margin: 10% 0 5% 0;
 }
 
 .title2 {
   width: 95%;
-  min-height: 50px;
-  margin-bottom: 20%;
+  min-height: 15vh;
+  margin-bottom: 10%;
 }
 
 /*/////////////////////          FEATURES          /////////////////////*/
 
 .wrapper {
-  background-color: rgba(100, 100, 255, 0.2);
+  background-color: rgba(200, 200, 200, 0.2);
 }
 
 .feature {
-  margin-bottom: 10%;
-  background-color: rgba(100, 100, 255, 0.7);
+  margin-bottom: 5%;
+  background-color: rgba(200, 200, 200, 0.4);
 }
 
 .feature-img {
-  min-height: 400px;
-  margin-bottom: 10%;
+  min-height: 300px;
+  margin-bottom: 5%;
 }
 
 .feature-h1 {
   width: 40%;
   min-height: 30px;
-  margin: 10% 0;
+  margin: 5% 0;
 }
 
 
@@ -91,12 +94,38 @@ body {
   body{
     background-color: blue;
   }
+  .logo {
+    float: left;
+  }
+  .ol {
+    float: right;
+  }
+  .feature {
+    float: left;
+    width: 47.5%;
+  }
+  .feature:nth-child(odd) {
+    margin-right: 5%;
+  }
 }
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width : 320px) and (orientation : portrait) {
   body{
     background-color: red;
+  }
+  .logo {
+    float: left;
+  }
+  .ol {
+    float: right;
+  }
+  .feature {
+    float: left;
+    width: 47.5%;
+  }
+  .feature:nth-child(odd) {
+    margin-right: 5%;
   }
 }
 
@@ -105,12 +134,41 @@ body {
   body{
     background-color: yellow;
   }
+  .logo {
+    float: left;
+  }
+  .ol {
+    float: right;
+  }
+  .feature {
+    float: left;
+    width: 30%;
+  }
+  .feature:nth-child(odd) {
+    margin-right: 0;
+  }
+  .feature:nth-child(3n+2) {
+    margin: 0 5%;
+  }
 }
 
 /* Smartphones Large (portrait) */
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait){
   body{
     background-color: orange;
+  }
+  .logo {
+    float: left;
+  }
+  .ol {
+    float: right;
+  }
+  .feature {
+    float: left;
+    width: 47.5%;
+  }
+  .feature:nth-child(odd) {
+    margin-right: 5%;
   }
 }
 
@@ -119,12 +177,41 @@ body {
   body{
     background-color: pink;
   }
+  .logo {
+    float: left;
+  }
+  .ol {
+    float: right;
+  }
+  .feature {
+    float: left;
+    width: 30%;
+  }
+  .feature:nth-child(odd) {
+    margin-right: 0;
+  }
+  .feature:nth-child(3n+2) {
+    margin: 0 5%;
+  }
 }
 
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
   body{
     background-color: purple;
+  }
+  .logo {
+    float: left;
+  }
+  .ol {
+    float: right;
+  }
+  .feature {
+    float: left;
+    width: 47.5%;
+  }
+  .feature:nth-child(odd) {
+    margin-right: 5%;
   }
 }
 
@@ -133,5 +220,21 @@ body {
 @media only screen  and (min-width : 1824px) {
   body{
     background-color: green;
+  }
+  .logo {
+    float: left;
+  }
+  .ol {
+    float: right;
+  }
+  .feature {
+    float: left;
+    width: 30%;
+  }
+  .feature:nth-child(odd) {
+    margin-right: 0;
+  }
+  .feature:nth-child(3n+2) {
+    margin: 0 5%;
   }
 }
